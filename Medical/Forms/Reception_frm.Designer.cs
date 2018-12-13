@@ -40,6 +40,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.tbName = new System.Windows.Forms.TextBox();
             this.btnOk = new System.Windows.Forms.Button();
+            this.cbTreatment = new System.Windows.Forms.CheckBox();
+            this.cbInvoice = new System.Windows.Forms.CheckBox();
+            this.cbVacation = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // dtpReserveDate
@@ -150,7 +153,7 @@
             // btnOk
             // 
             this.btnOk.Image = ((System.Drawing.Image)(resources.GetObject("btnOk.Image")));
-            this.btnOk.Location = new System.Drawing.Point(115, 190);
+            this.btnOk.Location = new System.Drawing.Point(115, 233);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(102, 43);
             this.btnOk.TabIndex = 21;
@@ -159,11 +162,44 @@
             this.btnOk.UseVisualStyleBackColor = true;
             this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
+            // cbTreatment
+            // 
+            this.cbTreatment.AutoSize = true;
+            this.cbTreatment.Location = new System.Drawing.Point(34, 187);
+            this.cbTreatment.Name = "cbTreatment";
+            this.cbTreatment.Size = new System.Drawing.Size(92, 21);
+            this.cbTreatment.TabIndex = 22;
+            this.cbTreatment.Text = "Treatment";
+            this.cbTreatment.UseVisualStyleBackColor = true;
+            // 
+            // cbInvoice
+            // 
+            this.cbInvoice.AutoSize = true;
+            this.cbInvoice.Location = new System.Drawing.Point(132, 187);
+            this.cbInvoice.Name = "cbInvoice";
+            this.cbInvoice.Size = new System.Drawing.Size(74, 21);
+            this.cbInvoice.TabIndex = 22;
+            this.cbInvoice.Text = "Invoice";
+            this.cbInvoice.UseVisualStyleBackColor = true;
+            // 
+            // cbVacation
+            // 
+            this.cbVacation.AutoSize = true;
+            this.cbVacation.Location = new System.Drawing.Point(212, 187);
+            this.cbVacation.Name = "cbVacation";
+            this.cbVacation.Size = new System.Drawing.Size(87, 21);
+            this.cbVacation.TabIndex = 22;
+            this.cbVacation.Text = "Vacation";
+            this.cbVacation.UseVisualStyleBackColor = true;
+            // 
             // Reception_frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(332, 255);
+            this.ClientSize = new System.Drawing.Size(332, 297);
+            this.Controls.Add(this.cbVacation);
+            this.Controls.Add(this.cbInvoice);
+            this.Controls.Add(this.cbTreatment);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.dtpReserveDate);
             this.Controls.Add(this.cbDept);
@@ -199,5 +235,8 @@
         public System.Windows.Forms.ComboBox cbJob;
         public System.Windows.Forms.TextBox tbMobile;
         public System.Windows.Forms.Button btnOk;
+        private System.Windows.Forms.CheckBox cbTreatment;
+        private System.Windows.Forms.CheckBox cbInvoice;
+        private System.Windows.Forms.CheckBox cbVacation;
     }
 }

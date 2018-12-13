@@ -14,6 +14,9 @@ namespace Medical
         //public int empCode{  get; set; }
         public string job{  get; set; }
         public string dept{  get; set; }
+        public bool treatment { get; set; }
+        public bool invoice { get; set; }
+        public bool vacation { get; set; }
         //public int medicalID{  get; set; }
         //public int extCode{  get; set; }
 

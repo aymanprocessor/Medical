@@ -47,7 +47,10 @@ namespace Medical.Forms
                             mobile = tbMobile.Text.ToString(),
                             reserveDate = dtpReserveDate.Value,
                             job = cbJob.Text.ToString(),
-                            dept = cbDept.Text.ToString()
+                            dept = cbDept.Text.ToString(),
+                            treatment = cbTreatment.Checked,
+                            invoice = cbInvoice.Checked,
+                            vacation = cbVacation.Checked
                         };
 
                         coll.Insert(reserve);
@@ -66,6 +69,9 @@ namespace Medical.Forms
                         row.reserveDate = dtpReserveDate.Value;
                         row.job = cbJob.Text;
                         row.dept = cbDept.Text;
+                        row.vacation = cbVacation.Checked;
+                        row.invoice = cbInvoice.Checked;
+                        row.treatment = cbTreatment.Checked;
 
                         coll.Update(row);
                     }
@@ -95,7 +101,10 @@ namespace Medical.Forms
                     Mobile = x.mobile,
                     Job = x.job,
                     Department = x.dept,
-                    Date = x.reserveDate.ToString("d/MM/yyyy")
+                    Date = x.reserveDate.ToString("d/MM/yyyy"),
+                    Treatment = x.treatment,
+                    Invoice = x.invoice,
+                    Vacation = x.vacation
                 });
 
                 reception.dgReception.DataSource = result.ToList();
@@ -109,11 +118,14 @@ namespace Medical.Forms
             dtpReserveDate.Value = DateTime.Today;
             cbJob.Text = "";
             cbDept.Text = "";
+            cbTreatment.Checked = false;
+            cbInvoice.Checked = false;
+            cbVacation.Checked = false;
         }
 
         private void tbMobile_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && !(e.KeyChar == '+'))
+            if (!char.IsDigit(e.KeyChar) && !(e.KeyChar == '+') && !(char.IsControl(e.KeyChar)))
             {
                 e.Handled = true;
             }
