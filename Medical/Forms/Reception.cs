@@ -188,7 +188,7 @@ namespace Medical
                     {
                         reception_Frm = new Reception_frm(this);
 
-                        using (var db = new LiteDB.LiteDatabase(@"database.db"))
+                        using (var db = new LiteDatabase(@"database.db"))
                         {
                             var coll = db.GetCollection<Reserve>("Reserves");
                             coll.EnsureIndex(x => x.name);
