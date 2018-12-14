@@ -37,7 +37,6 @@
             this.rbName = new System.Windows.Forms.RadioButton();
             this.rbDate = new System.Windows.Forms.RadioButton();
             this.tbSearch = new System.Windows.Forms.MaskedTextBox();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgReception)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,7 +106,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(416, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 17);
+            this.label1.Size = new System.Drawing.Size(72, 21);
             this.label1.TabIndex = 2;
             this.label1.Text = "Search:";
             // 
@@ -117,7 +116,7 @@
             this.rbName.Checked = true;
             this.rbName.Location = new System.Drawing.Point(419, 36);
             this.rbName.Name = "rbName";
-            this.rbName.Size = new System.Drawing.Size(66, 21);
+            this.rbName.Size = new System.Drawing.Size(82, 25);
             this.rbName.TabIndex = 4;
             this.rbName.TabStop = true;
             this.rbName.Text = "Name";
@@ -128,7 +127,7 @@
             this.rbDate.AutoSize = true;
             this.rbDate.Location = new System.Drawing.Point(504, 36);
             this.rbDate.Name = "rbDate";
-            this.rbDate.Size = new System.Drawing.Size(58, 21);
+            this.rbDate.Size = new System.Drawing.Size(74, 25);
             this.rbDate.TabIndex = 4;
             this.rbDate.Text = "Date";
             this.rbDate.UseVisualStyleBackColor = true;
@@ -137,25 +136,15 @@
             // 
             this.tbSearch.Location = new System.Drawing.Point(477, 12);
             this.tbSearch.Name = "tbSearch";
-            this.tbSearch.Size = new System.Drawing.Size(100, 23);
+            this.tbSearch.Size = new System.Drawing.Size(100, 27);
             this.tbSearch.TabIndex = 5;
             this.tbSearch.TextChanged += new System.EventHandler(this.tbSearch_TextChanged);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(584, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 17);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "label2";
-            // 
             // Reception
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(673, 491);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.rbDate);
             this.Controls.Add(this.rbName);
@@ -186,6 +175,5 @@
         private System.Windows.Forms.RadioButton rbName;
         private System.Windows.Forms.RadioButton rbDate;
         private System.Windows.Forms.MaskedTextBox tbSearch;
-        private System.Windows.Forms.Label label2;
     }
 }
