@@ -155,7 +155,7 @@ namespace Medical
                         Department = x.dept,
                         Date = x.reserveDate.ToString("d/MM/yyyy")
                     });
-
+                    MessageBox.Show("github");
                     dgReception.DataSource = row.ToList();
                 }
             }
@@ -216,7 +216,10 @@ namespace Medical
             }
         }
 
-       
+        private void dgReception_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
 

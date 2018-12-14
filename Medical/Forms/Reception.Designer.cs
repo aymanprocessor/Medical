@@ -54,6 +54,7 @@
             this.dgReception.Size = new System.Drawing.Size(655, 417);
             this.dgReception.TabIndex = 0;
             this.dgReception.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgReception_CellClick);
+            this.dgReception.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgReception_CellContentClick);
             this.dgReception.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgReception_CellDoubleClick);
             // 
             // btnNew
